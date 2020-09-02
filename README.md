@@ -20,8 +20,10 @@ The goal of this exercise is to create classes to represent those various types 
 1. Add code to each "Player" class to make it behave the way it should.
     * See the comment above each class for instructions. 
     * Complete the classes in the order specified below.
-1. AFter completing each class, use it to create one ore more Player objects in the `Main()` method. Write code to test these new objects.
+1. After completing each class, use it to create one or more Player objects in the `Main()` method. Write code to test these new objects.
 1. Add the new Player object(s) to the `players` list, so they will be passed to the `PlayMany()` method.
+
+> **NOTE:** Make sure to **FULLY TEST** each class immediately after you write it. Do **NOT** write all the classes before you test.
 
 #### You should complete the classes in this order:
 
