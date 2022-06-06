@@ -33,6 +33,9 @@ namespace ShootingDice
             CreativeSmackTalkingPlayer RandomSmackPlayer = new CreativeSmackTalkingPlayer();
             RandomSmackPlayer.Name = "Gregory";
 
+            HumanPlayer humanPlayer = new HumanPlayer();
+            humanPlayer.Name = "Houston";
+
             Console.WriteLine("-------------------");
 
             Player large = new LargeDicePlayer();
@@ -42,7 +45,7 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
-            RandomSmackPlayer.Play(player3);
+            humanPlayer.Play(player3);
 
             Console.WriteLine("-------------------");
 
