@@ -23,6 +23,16 @@ namespace ShootingDice
 
             player3.Play(player2);
 
+            SmackTalkingPlayer SmackPlayer = new SmackTalkingPlayer();
+            SmackPlayer.Name = "George";
+            SmackPlayer.Taunt = "You Suck!";
+
+            OneHigherPlayer HigherPlayer = new OneHigherPlayer();
+            HigherPlayer.Name = "Steve";
+
+            CreativeSmackTalkingPlayer RandomSmackPlayer = new CreativeSmackTalkingPlayer();
+            RandomSmackPlayer.Name = "Gregory";
+
             Console.WriteLine("-------------------");
 
             Player large = new LargeDicePlayer();
@@ -32,11 +42,15 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            RandomSmackPlayer.Play(player3);
+
+            Console.WriteLine("-------------------");
+
             List<Player> players = new List<Player>() {
                 player1, player2, player3, large
             };
 
-            PlayMany(players);
+            // PlayMany(players);
         }
 
         static void PlayMany(List<Player> players)
