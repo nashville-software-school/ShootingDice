@@ -36,6 +36,9 @@ namespace ShootingDice
             HumanPlayer humanPlayer = new HumanPlayer();
             humanPlayer.Name = "Houston";
 
+            SoreLoserPlayer soreLoser = new SoreLoserPlayer();
+            soreLoser.Name = "Ralph";
+
             Console.WriteLine("-------------------");
 
             Player large = new LargeDicePlayer();
@@ -45,7 +48,7 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
-            humanPlayer.Play(player3);
+            soreLoser.Play(humanPlayer);
 
             Console.WriteLine("-------------------");
 
