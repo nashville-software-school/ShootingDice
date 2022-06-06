@@ -42,6 +42,9 @@ namespace ShootingDice
             UpperHalfPlayer upperPlayer = new UpperHalfPlayer();
             upperPlayer.Name = "Desmond";
 
+            SoreLoserUpperHalfPlayer soreUpper = new SoreLoserUpperHalfPlayer();
+            soreUpper.Name = "Alfred";
+
             Console.WriteLine("-------------------");
 
             Player large = new LargeDicePlayer();
@@ -51,7 +54,7 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
-            upperPlayer.Play(humanPlayer);
+            soreUpper.Play(humanPlayer);
 
             Console.WriteLine("-------------------");
 
