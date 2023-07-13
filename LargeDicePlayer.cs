@@ -1,11 +1,9 @@
-namespace ShootingDice
+namespace ShootingDice;
+// A Player who brings a large die to the game
+public class LargeDicePlayer : Player
 {
-    // A Player who brings a large die to the game
-    public class LargeDicePlayer : Player
+    public LargeDicePlayer()
     {
-        public LargeDicePlayer()
-        {
-            DiceSize = 20;
-        }
+        DiceSize = 20;
     }
 }
